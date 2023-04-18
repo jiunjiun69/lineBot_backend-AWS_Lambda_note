@@ -153,3 +153,11 @@ rm -rf env
 要多插入套件時:
 pip install 新套件 -t C:/路徑
 之後再摳過去上傳
+
+
+# AWS Lambda的numpy error 解決方法:
+https://stackoverflow.com/questions/68697824/numpy-error-when-importing-pandas-with-aws-lambda
+
+去 https://mirrors.aliyun.com/pypi/simple/numpy/
+下載numpy-1.21.1-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl
+之後用linux系統unzip，一起丟到環境中上傳Layer中就可以解決了
